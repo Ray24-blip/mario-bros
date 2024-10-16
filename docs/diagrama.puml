@@ -1,0 +1,26 @@
+@startuml foco
+
+class Usuario
+class Mascota{
+    +Pasear()
+    -Felicidad felicidad
+}
+class Juego{
+-Mascota mascota
+-Usuario usuario    
+}
+class Felicidad
+class Porcentaje{
++Incrementar(Numero)
++Disminuir(Numero)
+-Numero numero    
+}
+class Numero
+
+Usuario o-- Mascota
+Mascota *-- Felicidad
+Juego *-- Usuario
+Juego *-- Mascota
+Felicidad --|> Porcentaje
+Porcentaje *-- Numero
+@enduml
