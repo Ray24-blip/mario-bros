@@ -29,12 +29,13 @@ public:
 
     void Imprimir()
     {
+
         {
             for (auto &&focoActual : focos)
             {
-                std::cout << focoActual.Imprimir()<<"-";
+                std::cout << focoActual.Imprimir() << "-";
             }
-            std::cout<<endl;
+            std::cout << endl;
         }
     }
 };
